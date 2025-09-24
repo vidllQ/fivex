@@ -1,5 +1,5 @@
 # Security
-The CFX team takes the security of our software products and services seriously, which includes not only the products built from this repository (FiveM, RedM, FXServer), but also, our online services.
+The XFX team takes the security of our software products and services seriously, which includes not only the products built from this repository (FiveM, RedM, FXServer), but also, our online services.
 
 # Reporting Security Issues
 **Please do not report security vulnerabilities through public GitHub issues or pull requests.**
