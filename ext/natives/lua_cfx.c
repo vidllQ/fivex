@@ -32,7 +32,7 @@ static const struct luaL_Reg sfx[] = {
     {NULL, NULL}
 };
 
-int luaopen_cfx(lua_State* l)
+int luaopen_sfx(lua_State* l)
 {
 
     luaL_newlibtable(l, cfx);
