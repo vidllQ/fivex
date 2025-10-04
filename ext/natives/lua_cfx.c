@@ -27,7 +27,7 @@ static int hash(lua_State* l)
 	return 1;
 }
 
-static const struct luaL_Reg cfx[] = {
+static const struct luaL_Reg sfx[] = {
     {"hash", hash},
     {NULL, NULL}
 };
@@ -36,6 +36,6 @@ int luaopen_cfx(lua_State* l)
 {
 
     luaL_newlibtable(l, cfx);
-    luaL_setfuncs(l, cfx, 0);
+    luaL_setfuncs(l, Sfx, 0);
     return 1;
 }
