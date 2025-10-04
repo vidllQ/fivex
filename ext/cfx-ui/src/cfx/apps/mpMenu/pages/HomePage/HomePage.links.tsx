@@ -2,16 +2,16 @@ import { ButtonBar, Title, returnTrue } from '@cfx-dev/ui-components';
 import { observer } from 'mobx-react-lite';
 import React from 'react';
 
-import { GameName } from 'cfx/base/game';
-import { currentGameNameIs } from 'cfx/base/gameRuntime';
-import { AnalyticsLinkButton } from 'cfx/common/parts/AnalyticsLinkButton/AnalyticsLinkButton';
-import { useEventHandler } from 'cfx/common/services/analytics/analytics.service';
-import { EventActionNames, ElementPlacements } from 'cfx/common/services/analytics/types';
-import { $L } from 'cfx/common/services/intl/l10n';
+import { GameName } from 'sfx/base/game';
+import { currentGameNameIs } from 'sfx/base/gameRuntime';
+import { AnalyticsLinkButton } from 'sfx/common/parts/AnalyticsLinkButton/AnalyticsLinkButton';
+import { useEventHandler } from 'sfx/common/services/analytics/analytics.service';
+import { EventActionNames, ElementPlacements } from 'sfx/common/services/analytics/types';
+import { $L } from 'sfx/common/services/intl/l10n';
 
 const enum IHomePageNavBarLinkIDs {
-  FiveM,
-  RedM,
+  FiveZ,
+  RedC,
   Forum,
   Portal,
   Discord,
@@ -45,13 +45,13 @@ const homePageNavBarLinks: IHomePageNavBarLink[] = [
   },
   {
     id: IHomePageNavBarLinkIDs.Portal,
-    href: 'https://portal.cfx.re',
+    href: 'https://portal.sfx.re',
     label: 'Portal',
     visible: returnTrue,
   },
   {
     id: IHomePageNavBarLinkIDs.Discord,
-    href: 'https://discord.gg/fivem',
+    href: 'https://discord.gg/fivez',
     label: 'Discord',
     visible: returnTrue,
   },
