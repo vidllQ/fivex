@@ -1,9 +1,9 @@
-@use "~@cfx-dev/ui-components/dist/styles-scss/ui" as ui;
+@use "~@sfx-dev/ui-components/dist/styles-scss/ui" as ui;
 
 $fg: #fffff0;
 $bg: #161923;
 
-.cfxui-theme-gta5-dark {
+.sfxui-theme-gta5-dark {
   @include ui.define-main-colors($bg, $fg, (
     'primary': darken(#f50551, 10%)
   ));
