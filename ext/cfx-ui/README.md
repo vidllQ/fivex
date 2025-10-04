@@ -1,9 +1,9 @@
-# cfx-ui
+# sfx-ui
 
-`cfx-ui` is a React application containing the main menu (`mpMenu`) for the Cfx.re game clients.
+`sfx-ui` is a React application containing the main menu (`mpMenu`) for the Sfx.re game clients.
 
 ## Building
-See [ui-build](../ui-build/) for building a full version of `cfx-ui`.
+See [ui-build](../ui-build/) for building a full version of `sfx-ui`.
 
 ## Developing (game)
 ```
