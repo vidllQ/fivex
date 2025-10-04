@@ -189,7 +189,7 @@ struct sfxState
 		return (gamePid == GetCurrentProcessId());
 	}
 
-	inline bool IsFiveM()
+	inline bool IsFivez()
 	{
 		return GetProductID() == ProductID::FIVEZ;
 	}
@@ -209,7 +209,7 @@ namespace sfx
 {
 	inline bool IsFiveZ()
 	{
-		return CfxState::Get()->IsFiveZ();
+		return SfxState::Get()->IsFiveZ();
 	}
 
 	inline bool IsRedC()
