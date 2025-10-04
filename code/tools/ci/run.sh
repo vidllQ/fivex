@@ -1,6 +1,6 @@
 #!/bin/sh
 
-cd /opt/cfx-server
+cd /opt/Sfx-server
 [ -d cache ] || mkdir cache
 
-exec /opt/cfx-server/FXServer $SERVER_ARGS $*
+exec /opt/Sfx-server/CXServer $SERVER_ARGS $*
