@@ -4,13 +4,13 @@
 #include <windows.h>
 #include <cassert>
 
-struct CfxState
+struct sfxState
 {
 	enum class ProductID
 	{
 		INVALID,
-		FIVEM,
-		REDM,
+		FIVEZ,
+		REDC,
 	};
 
 	int initialLauncherPid;
@@ -32,12 +32,12 @@ struct CfxState
 
 	wchar_t initCommandLine[2048];
 
-	// Link protocol name is used in app links like `fivem://connect/asdfgh`
+	// Link protocol name is used in app links like `fiveZ://connect/asdfgh`
 	wchar_t linkProtocol[32];
 
 	ProductID productId;
 
-	CfxState()
+	SfxState()
 	{
 		memset(initPathGame, 0, sizeof(initPathGame));
 		memset(initPathLauncher, 0, sizeof(initPathLauncher));
@@ -191,39 +191,39 @@ struct CfxState
 
 	inline bool IsFiveM()
 	{
-		return GetProductID() == ProductID::FIVEM;
+		return GetProductID() == ProductID::FIVEZ;
 	}
 
-	inline bool IsRedM()
+	inline bool IsRedC()
 	{
-		return GetProductID() == ProductID::REDM;
+		return GetProductID() == ProductID::REDC;
 	}
 
 	inline static auto Get()
 	{
-		return HostSharedData<CfxState>{ "CfxInitState" };
+		return HostSharedData<SfxState>{ "SfxInitState" };
 	}
 };
 
-namespace cfx
+namespace sfx
 {
-	inline bool IsFiveM()
+	inline bool IsFiveZ()
 	{
-		return CfxState::Get()->IsFiveM();
+		return CfxState::Get()->IsFiveZ();
 	}
 
-	inline bool IsRedM()
+	inline bool IsRedC()
 	{
-		return CfxState::Get()->IsRedM();
+		return SfxState::Get()->IsRedC();
 	}
 
 	inline int GetGameBuild()
 	{
-		return CfxState::Get()->GetGameBuild();
+		return SfxState::Get()->GetGameBuild();
 	}
 
 	inline bool IsMasterProcess()
 	{
-		return CfxState::Get()->IsMasterProcess();
+		return SfxState::Get()->IsMasterProcess();
 	}
 }
